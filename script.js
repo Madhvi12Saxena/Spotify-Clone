@@ -14,6 +14,10 @@ let songs = [
     {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
     {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
     {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
 ]
 
 
@@ -31,11 +35,17 @@ masterPlay.addEventListener('click', ()=>{
         audioElement.pause();
         masterPlay.classList.remove('fa-circle-pause');
         masterPlay.classList.add('fa-circle-play');
+        gif.style.opacity = 0;
     }
 })
 
 // Listen to Events
-myProgressBar.addEventListener('timeupdate', ()=>{
-    console.log('timeupdate');
+audioElement.addEventListener('timeupdate', ()=>{
     // Update Seekbar
+    progress = parseInt((audioElement.currentTime/audioElement.duration)* 100);
+    myProgressBar.value = progress;
+})
+
+myProgressBar.addEventListener('change', ()=>{
+    audioElement.currentTime = myProgressBar.value * audioElement.duration/100;
 })
