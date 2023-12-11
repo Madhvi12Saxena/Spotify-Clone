@@ -14,7 +14,7 @@ This project is a simple Spotify clone built using HTML, CSS, and JavaScript. It
 
 
 # Getting Started
-* Clone the repository: git clone '''https://github.com/your-username/spotify-clone.git'''
+* Clone the repository: git clone https://github.com/your-username/spotify-clone.git
 * Open the index.html file in your browser.
 
 # Usage
@@ -24,7 +24,7 @@ Simply open the index.html file in a web browser to view the Spotify clone. Clic
 Contributions are welcome! Feel free to open issues and pull requests. 
 
 # License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License.
 
 # Acknowledgments
 * Inspired by the Spotify music streaming platform.
