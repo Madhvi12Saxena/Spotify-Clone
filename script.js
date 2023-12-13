@@ -57,15 +57,22 @@ myProgressBar.addEventListener('change', ()=>{
 
 const makeAllPlays = ()=>{
     Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-        element.classList.add('fa-circle-pause');
+        element.classList.remove('fa-circle-pause');
+        element.classList.add('fa-circle-play');
     })
 }
 
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-    element.addEventListener('click', ()=>{
+    element.addEventListener('click', (e)=>{
         // console.log(e.target);
         makeAllPlays();
+        index = parseInt(e.target.id);
         e.target.classList.remove('fa-circle-play');
         e.target.classList.add('fa-circle-pause');
+        audioElement.src = `songs/${index+1}.mp3`;
+        audioElement.currentTime = 0;
+        audioElement.play();
+        masterPlay.classList.remove('fa-circle-play');
+        masterPlay.classList.add('fa-circle-pause');
     })
 })
