@@ -76,3 +76,12 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         masterPlay.classList.add('fa-circle-pause');
     })
 })
+
+
+// 
+const makeAllPlays = ()=>{
+    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+        element.classList.remove('fa-circle-pause');
+        element.classList.add('fa-circle-play');
+    })
+}
