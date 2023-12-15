@@ -9,16 +9,16 @@ let gif = document.getElementById('gif');
 let songItems = Array.from(document.getElementById('songItem'));
 
 let songs = [
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Hare Krishna", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "Shri Krishna Govind", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Mera Bhagwan Aaye Hain", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Kesari Ke Lal", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "Bhole Shankar", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
+    {songName: "Shiv Tandav Stotram", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
+    {songName: "Bhala", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
+    {songName: "Kis Roop Me Aakar", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
+    {songName: "Namo Namo", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
 ]
 
 songItems.forEach((element, i) => {
