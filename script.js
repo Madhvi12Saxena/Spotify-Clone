@@ -9,16 +9,16 @@ let gif = document.getElementById('gif');
 let songItems = Array.from(document.getElementById('songItem'));
 
 let songs = [
-    {songName: "Ram Siya Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
-    {songName: "Ram Siya Ram", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Ram Siya Ram", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
 ]
 
 songItems.forEach((element, i) => {
@@ -75,15 +75,4 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
     })
-})
-
-document.getElementById('next').addEventListener('click',()=>{
-    if(songIndex>9){
-        songIndex = 0
-    }
-    else{
-        
-    }
-    songIndex += 1;
-
 })
